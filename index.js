@@ -3,7 +3,7 @@ var Promise = require('bluebird');
 const hb = require('handlebars')
 
 module.exports
-async function generatePdf(file, options, callback) {
+async function generatePdf(file, options, newChromePath, callback) {
   // we are using headless mode
   let args = [
     '--no-sandbox',
@@ -15,7 +15,8 @@ async function generatePdf(file, options, callback) {
   }
 
   const browser = await puppeteer.launch({
-    args: args
+    args: args,
+    executablePath: newChromePath
   });
   const page = await browser.newPage();
 

@@ -9,6 +9,9 @@
   "scripts": {
     "test": "mocha tests/*.js -R spec --ui bdd --timeout 5000"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "author": "mrafiqk",
   "license": "ISC",
   "dependencies": {
@@ -29,10 +32,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mrafiqk/html-pdf-node.git"
+    "url": "git+https://github.com/BrunoGusChagas/html-pdf-node.git"
   },
   "bugs": {
-    "url": "https://github.com/mrafiqk/html-pdf-node/issues"
+    "url": "https://github.com/BrunoGusChagas/html-pdf-node/issues"
   },
   "homepage": "https://github.com/mrafiqk/html-pdf-node#readme"
 }
